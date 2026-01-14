@@ -53,7 +53,14 @@ export default {
         });
       }
       try {
-        new URL(url); // 验证 URL 格式
+        const parsedUrl = new URL(url); // 验证 URL 格式
+        // 安全检查: 必须是 http 或 https 协议
+        if (parsedUrl.protocol !== "http:" && parsedUrl.protocol !== "https:") {
+            return Response.json({ error: "Invalid URL protocol (only http/https allowed)" }, { 
+                status: 400,
+                headers: { "Access-Control-Allow-Origin": "*" }
+            });
+        }
       } catch (e) {
         return Response.json({ error: "Invalid URL format" }, { 
             status: 400,

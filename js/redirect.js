@@ -82,6 +82,28 @@ document.addEventListener('DOMContentLoaded', function() {
         finalUrl = target + search + hash;
     }
 
+    // 安全检查：防止 XSS (例如 javascript: 协议)
+    // 只允许 http, https 协议
+    try {
+        const checkUrl = new URL(finalUrl, window.location.origin);
+        if (checkUrl.protocol !== 'http:' && checkUrl.protocol !== 'https:') {
+            console.error("Blocked potentially unsafe redirect:", finalUrl);
+            // 降级到安全页面或显示错误
+            finalUrl = "https://blog.acofork.com/404"; 
+            if (document.getElementById('url-display')) {
+                document.getElementById('url-display').textContent = "Blocked unsafe URL";
+            }
+            // 强制阻断
+            target = null;
+        }
+    } catch (e) {
+        // 如果无法解析 URL，也视为不安全（或者它是相对路径，相对路径通常安全但我们这里预期是绝对路径）
+        // 如果是相对路径，new URL(url, base) 会解析成功。
+        // 我们的 target 预期是完整 URL 或 fallback 拼接后的 URL。
+        // 如果 target 本身有问题，保持谨慎。
+        console.error("URL check failed:", e);
+    }
+
     // 执行逻辑
     if (mode === 'direct') {
         // 直接跳转
