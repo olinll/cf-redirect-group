@@ -1206,5 +1206,9 @@ window.RULES_INTERMEDIATE = {
     "/1354646757": {
         "url": "https://iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii.iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii.in/iIIIIiIIiiIiiiIiiIIIiIiIiIIIiiIiiIIiIIiiiiIiiiIiiiIIIiIiiiIiiiIiiIIiIiiiiIIIiIiiiIIIiIiiiIIIiiiiiIIIiiIIiiIIIiIiiiIiIIIIiiIiIIIIiIIiIiiIiIIiIiiIiIIiIiiIiIIiIiiIiIIiIiiIiIIiIiiIiIIiIiiIiIIiIiiIiIIi",
         "expired_at": "2026-01-15T11:26:00.000Z"
+    },
+    "/re224": {
+        "url": "https://github.co",
+        "expired_at": "2026-01-21T23:27:00.000Z"
     }
 };
