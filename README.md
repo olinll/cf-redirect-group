@@ -1,62 +1,122 @@
-# Static Redirect Service
+# 静态重定向服务 (Static Redirect Service)
 
-This is a simple static redirect service implemented in client-side JavaScript.
+这是一个基于客户端 JavaScript 实现的简单静态重定向服务。它可以部署在 GitHub Pages、Cloudflare Pages 等静态托管服务上，无需购买服务器。
 
-## How it works
+## 功能特性
 
-- **index.html / 404.html**: Entry points.
-- **js/config.js**: Contains the fallback configuration.
-- **js/rules_direct.js**: Contains rules for **direct** redirects (no intermediate page).
-- **js/rules_intermediate.js**: Contains rules for **intermediate** redirects (shows a card, user must click to proceed).
-- **js/redirect.js**: Handles the redirect logic.
+*   **完全免费**: 依托 GitHub Pages 和 Cloudflare Workers 免费额度。
+*   **两种重定向模式**:
+    *   **直接跳转**: 访问短链直接跳转到目标地址。
+    *   **中间页跳转**: 显示一个安全提示卡片，用户需点击“继续访问”才跳转（适合外部或敏感链接，防止误触）。
+*   **自助创建**: 提供 `/_url.html` 界面，允许访客自助创建短链（需要密码或配置 Token）。
+*   **安全防护**:
+    *   防 XSS、防 HTML 注入。
+    *   防循环重定向（禁止套娃）。
+    *   CSRF 保护。
+    *   目标 URL 有效性检查（死链无法创建）。
+*   **自动过期**: 支持设置短链有效期（最长7天），过期自动清理。
+*   **参数保留**: 支持透传 URL 参数（如 `?id=123`）和哈希（如 `#section`）。
 
-## Configuration
+---
 
-### Rules Data Structure
+## 🚀 快速开始（小白教程）
 
-The rules support an object structure with `expired_at`.
+### 第一步：Fork 本仓库
 
-1.  **Direct Redirects** (`js/rules_direct.js`):
-    ```javascript
-    window.RULES_DIRECT = {
-        "/path": {
-            "url": "https://target.url",
-            "expired_at": "2024-10-27T10:00:00Z"
-        }
-    };
-    ```
+点击右上角的 **Fork** 按钮，将本仓库复制到你自己的 GitHub 账号下。
 
-2.  **Intermediate Redirects** (`js/rules_intermediate.js`):
-    ```javascript
-    window.RULES_INTERMEDIATE = {
-        "/path": {
-            "url": "https://target.url",
-            "expired_at": ""
-        }
-    };
-    ```
+### 第二步：开启 GitHub Pages
 
-### Fallback
+1.  进入你 Fork 后的仓库。
+2.  点击 **Settings** -> **Pages**。
+3.  在 **Build and deployment** 下，**Source** 选择 `Deploy from a branch`。
+4.  **Branch** 选择 `main` 分支，文件夹选择 `/ (root)`。
+5.  点击 **Save**。
+6.  等待几分钟，你会获得一个类似 `https://你的用户名.github.io/Static_Redirect_Group/` 的网址。
 
-Edit `js/config.js`:
+此时，基础的重定向功能已经可用了！
 
+---
+
+## 🛠️ 进阶配置：开启自助创建短链 (Cloudflare Worker)
+
+如果你想让别人（或者你自己方便地）通过网页创建短链，需要部署一个 Cloudflare Worker。
+
+### 1. 准备工作
+*   注册一个 [Cloudflare](https://www.cloudflare.com/) 账号。
+*   在 GitHub 申请一个 [Personal Access Token (Classic)](https://github.com/settings/tokens)。
+    *   **Scopes** 勾选 `repo` (给予读写仓库权限)。
+    *   保存好这个 Token，**不要泄露给别人**。
+
+### 2. 创建 Worker
+1.  登录 Cloudflare Dashboard，点击左侧 **Workers & Pages**。
+2.  点击 **Create Application** -> **Create Worker**。
+3.  给 Worker 起个名字（例如 `my-short-link`），点击 **Deploy**。
+4.  点击 **Edit code**。
+5.  将本项目中 `worker.js` 的内容全部复制，覆盖 Cloudflare 编辑器里的代码。
+6.  点击右上角 **Save and deploy**。
+
+### 3. 配置环境变量
+在 Worker 的设置页面 (**Settings** -> **Variables**) 添加以下环境变量：
+
+| 变量名 | 值 | 说明 |
+| :--- | :--- | :--- |
+| `GITHUB_TOKEN` | `ghp_xxxx...` | 刚才申请的 GitHub Token |
+| `GITHUB_OWNER` | `你的GitHub用户名` | 例如 `afoim` |
+| `GITHUB_REPO` | `你的仓库名` | 例如 `Static_Redirect_Group` |
+| `GITHUB_BRANCH` | `main` | 分支名，通常是 main |
+| `BASE_DOMAIN` | `你的短链域名` | **重要！** 用于安全检查。例如 `u.2x.nz` 或 `你的用户名.github.io` |
+
+### 4. 绑定路由 (可选但推荐)
+如果你有自己的域名托管在 Cloudflare：
+1.  在 Worker -> **Triggers** -> **Custom Domains** 中添加一个子域名（如 `api.2x.nz`）。
+2.  或者在你的网站域名下添加 **Routes**，例如 `example.com/api/create` 指向该 Worker。
+
+### 5. 修改前端配置
+修改 `_url.html` 文件（可以直接在 GitHub 网页上编辑）：
+找到 `fetch('/api/create', ...)` 这一行，将 `/api/create` 替换为你 Worker 的实际地址（例如 `https://my-short-link.你的名字.workers.dev`）。
+
+---
+
+## 📖 文件结构说明
+
+*   `index.html` / `404.html`: 入口文件。`404.html` 是核心，利用 GitHub Pages 找不到文件显示 404 的机制来接管路由。
+*   `_url.html`: 创建短链的图形化界面。
+*   `js/config.js`: 全局配置文件（设置 Fallback 默认跳转地址）。
+*   `js/rules_direct.js`: **直接跳转**的规则列表（手动维护）。
+*   `js/rules_intermediate.js`: **中间页跳转**的规则列表（Worker 自动写入这里）。
+*   `js/redirect.js`: 核心跳转逻辑代码。
+*   `worker.js`: Cloudflare Worker 后端代码。
+
+## ⚙️ 手动配置规则
+
+如果你不想用 Worker，也可以直接修改 JS 文件来添加规则：
+
+**修改 `js/rules_direct.js` (直接跳转):**
+```javascript
+window.RULES_DIRECT = {
+    "/my-link": {
+        "url": "https://www.google.com",
+        "expired_at": "" // 可留空，或填 "2025-12-31T23:59:59Z"
+    }
+};
+```
+
+**修改 `js/config.js` (默认回退):**
 ```javascript
 window.REDIRECT_CONFIG = {
+    // 当访问的短链不存在时，跳转到哪里
     fallback: "https://blog.acofork.com"
 };
 ```
 
-## Features
+## 🔒 安全说明
 
-- **Split Rules**: Support for both direct and intermediate page redirects.
-- **Metadata Support**: 
-    - `expired_at`: Expiration timestamp (ISO 8601). **Note**: The frontend client simply redirects if the rule exists. Expiration management is handled by the backend service, which will remove expired rules from the file.
-- **Intermediate Page**: Users are shown a card with the target URL and must click to proceed (for sensitive or external links).
-- **CSP**: Content Security Policy configured.
-- **Query Parameter Preservation**: Query parameters (e.g., `?callback=...`) are preserved and passed to the target URL.
-- **Hash Preservation**: URL fragments (e.g., `#section`) are preserved.
-- **Client-Side Only**: No server-side code (Node.js, PHP, etc.) required.
+本项目已通过多项安全加固：
+*   ✅ **XSS 防护**: 严格检查 URL 协议，禁止 `javascript:` 等恶意伪协议。
+*   ✅ **CSRF 防护**: Worker 检查 Origin/Referer，防止被恶意站点盗刷。
+*   ✅ **循环保护**: 禁止创建指向短链服务自身的死循环链接。
 
-## Deployment
+## ❤️ 赞助
 
-Deploy the entire repository to any static hosting provider (GitHub Pages, Cloudflare Pages, Netlify, Vercel, etc.).
+如果这个项目对你有帮助，欢迎 [赞助我](https://2x.nz) 或给一个 Star ⭐️！
