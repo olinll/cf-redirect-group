@@ -64,7 +64,7 @@ window.RULES_DIRECT = {
         "expired_at": ""
     },
     "/s": {
-        "url": "https://cfw-shorter.2x.nz",
+        "url": "https://2x.nz/_url",
         "expired_at": ""
     },
     "/plan": {
