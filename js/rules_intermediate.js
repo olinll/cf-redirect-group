@@ -1190,5 +1190,9 @@ window.RULES_INTERMEDIATE = {
     "/7423947238": {
         "url": "https://blog.acofork.com",
         "expired_at": "2026-01-14T19:10:00.000Z"
+    },
+    "/test353": {
+        "url": "https://www.bilibili.com/325903362",
+        "expired_at": "2026-01-15T19:31:00.000Z"
     }
 };
