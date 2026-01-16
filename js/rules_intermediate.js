@@ -2154,5 +2154,9 @@ window.RULES_INTERMEDIATE = {
     "/0b269": {
         "url": "https://x.xx/?d={\"p\": \"ec2fe\", \"c\": \"kjuO6AgbJOlS5oek-lsk90fmbP3wVlAZx1F6DPT3oIdwUBCLTpFn5ur0r5w4Er-u5OmpZOGC5aVlDSnZJdmtuDIdUfg4uQKGiySQfVoKSyPZ36L5bfCfg8QHpoZERxe51nATgJfABNZZPfUGTFjGx0UpANXJu8SS5oo3M4aBR5zsjzAHlIt5aVICuIKk9c7koR65vWCFqpI8Lmuzd_3AQr2yg-iS6JjjTzd0dr4lj\", \"n\": \"97ead\", \"v\": \"0b269\"}",
         "expired_at": "2026-01-19T01:03:47.000Z"
+    },
+    "/97ead": {
+        "url": "https://x.xx/?d={\"p\": \"0b269\", \"c\": \"VVnd_7U6dS_IxLYh12Y13e2-q7GMR5YCLZWaAT2L57KKmeSh4RNH8YzT9Q594XPp-qOzHtWrhBAmT6NfC96q3o81deYYyOryxQ2m-sVE6dH4WN_hJnUcRxPZwqHPZ6ln7Zq5Vc8fYwt\", \"n\": null, \"v\": \"97ead\"}",
+        "expired_at": "2026-01-19T01:03:49.000Z"
     }
 };
