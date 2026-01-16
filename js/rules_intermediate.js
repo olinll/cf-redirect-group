@@ -2030,5 +2030,9 @@ window.RULES_INTERMEDIATE = {
     "/c2ebd": {
         "url": "https://x.xx/?d={\"p\": \"4acc0\", \"c\": \"sT540WWuQbh8RqoCgFN8Ypw3hrhc1w9z_01ubI4FncgSmmN_ou69FAhT2xaIHD1gzDGO0EmC-R9hqLu4DUzZ1HJ-aduhH16yb4VicLnaAvqcAe6ZIzZcbSpioo5MxNIDcJ4x8qiKVg5JbN2Or-Yyofkkjyanf53NpBkUU179Ljd4htwYiPO5r7E91hR5vtCQX5nzs2lmg5vWUD_8i10kZqJSgc2vRQU4UsH1eSTZX\", \"n\": \"c0129\", \"v\": \"c2ebd\"}",
         "expired_at": "2026-01-19T01:02:56.000Z"
+    },
+    "/c0129": {
+        "url": "https://x.xx/?d={\"p\": \"c2ebd\", \"c\": \"l_TeoqQjg4d61uzaSLF9FQctgFc968AVUP9DZSKoS6fEXZFX0djoo5sDC94lF3IA8_T19cAHffYUM2Y7X7W41HiHJuN4OKQaisNwUS924Hmpq_CQG2raPs2j-KbBF9oP9SRZqwTXAE2vNSpON-d_Lf535unKNzRdGvvr_9yp0lOVJSq8hzRSpxWTEYYweB2Ttg1FaBZJOqUKREYUElVQmoE9i62Ak1EgUSkvIjSW9\", \"n\": \"8fb1a\", \"v\": \"c0129\"}",
+        "expired_at": "2026-01-19T01:02:58.000Z"
     }
 };
