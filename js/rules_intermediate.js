@@ -2134,5 +2134,9 @@ window.RULES_INTERMEDIATE = {
     "/test1121q": {
         "url": "https://www.imdb.com/title/tt32792739/",
         "expired_at": "2026-01-16T12:29:00.000Z"
+    },
+    "/share": {
+        "url": "http://ipv4.thinkcentre-cloud.xyz:31557/",
+        "expired_at": "2026-01-16T09:00:00.000Z"
     }
 };
