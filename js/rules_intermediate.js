@@ -2014,5 +2014,9 @@ window.RULES_INTERMEDIATE = {
     "/3b027": {
         "url": "https://x.xx/?d={\"p\": \"485e0\", \"c\": \"vz4CKXlem6dUxYpoESTFbAX_Q6u4lMSEvsClTQQrvbSO_7zwgqHDVU_hcYB2YkqiXTGWmMa5czY8BD6fEpo4MKqiiPqcorqSWpQutUgMoHEClQRzCf-3sGKHkNgh6YuZ9WljCnKq51ip4tVyYqWpjWWdVtng5l7X_xkTF8YBWaDFYGeqtCIuc2hsugLJdzbLw3mV7J7aEeW5PSbbwVFFbngZsQ3HCWAbCREkqBb7Q\", \"n\": \"7ca67\", \"v\": \"3b027\"}",
         "expired_at": "2026-01-19T01:02:50.000Z"
+    },
+    "/7ca67": {
+        "url": "https://x.xx/?d={\"p\": \"3b027\", \"c\": \"6SRP70dbopvHnggg_eKEIr2Vrq7mLJ0_ydZl6ilWg1SHGep44uO9QAr8MM47Y9-REU3Ay7D7hD8SHoUblrPrhlGHFpJN-hTa2CKMMtY0oaApkQbTmWzyUPX6fWsdTY4R-15jAHblEJjNeDybuRv1l1zeJV9yi2Ig_0Xo2p9JT9lArNuxVt8NhWiH3tW3uJqgL4DfT8NeZvz_WayLO0Dh24-R1NiAKZmPN2OCWbqLT\", \"n\": \"7b9df\", \"v\": \"7ca67\"}",
+        "expired_at": "2026-01-19T01:02:51.000Z"
     }
 };
