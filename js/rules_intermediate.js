@@ -2774,5 +2774,9 @@ window.RULES_INTERMEDIATE = {
     "/stemw": {
         "url": "https://s.tem",
         "expired_at": "2026-01-23T11:19:00.000Z"
+    },
+    "/xiaomi": {
+        "url": "https://pan.quark.cn/list#/richtext/094efdc6b9f2426591c5f7b6c369a118",
+        "expired_at": "2026-01-23T16:30:00.000Z"
     }
 };
