@@ -2778,5 +2778,9 @@ window.RULES_INTERMEDIATE = {
     "/xiaomi": {
         "url": "https://pan.quark.cn/list#/richtext/094efdc6b9f2426591c5f7b6c369a118",
         "expired_at": "2026-01-23T16:30:00.000Z"
+    },
+    "/hoooooooo": {
+        "url": "https://odd.lzacg.one/d/%5B%E4%BC%9A%E7%A4%BE%5DCYCLET/%E9%A7%84%E4%BD%9C%20%EF%BD%9E%E7%88%B1%E4%B8%BD%E4%B8%9D%E4%B8%8E%E5%85%8B%E7%BD%97%E8%89%BE%E8%BF%9E%E7%BB%93%E4%B9%8B%E6%97%A5%EF%BD%9E/%E9%A7%84%E4%BD%9C%20%EF%BD%9E%E7%88%B1%E4%B8%BD%E4%B8%9D%E4%B8%8E%E5%85%8B%E7%BD%97%E8%89%BE%E8%BF%9E%E7%",
+        "expired_at": "2026-01-20T02:00:00.000Z"
     }
 };
