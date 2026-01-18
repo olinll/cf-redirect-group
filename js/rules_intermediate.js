@@ -2786,5 +2786,9 @@ window.RULES_INTERMEDIATE = {
     "/ztools": {
         "url": "https://zhuxiaojt.github.io/tools",
         "expired_at": "2026-01-24T15:59:00.000Z"
+    },
+    "/beifen": {
+        "url": "https://grace153.digitalpress.blog/fang-shi-lian-qing-shou-cang/",
+        "expired_at": "2026-01-19T01:34:00.000Z"
     }
 };
