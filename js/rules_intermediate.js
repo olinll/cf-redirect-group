@@ -1894,5 +1894,9 @@ window.RULES_INTERMEDIATE = {
     "/steamlink": {
         "url": "https://edgeone.gh-proxy.org/https://github.com/owomushi/Pico-Steamlink/releases/download/9-26-2025/offical.steamlinkvr.apk",
         "expired_at": "2026-01-27T15:59:00.000Z"
+    },
+    "/11010": {
+        "url": "https://easytier.zyflypzlc.qzz.io",
+        "expired_at": "2026-01-27T15:59:00.000Z"
     }
 };
