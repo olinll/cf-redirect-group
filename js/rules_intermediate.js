@@ -1890,5 +1890,9 @@ window.RULES_INTERMEDIATE = {
     "/hxuegfsfs": {
         "url": "https://d1.qyshare.store/s/TBVWTxUNFQBSKFCVA501FSBgYBGlYFKFCVA50QKFCVA50aKFCVA501IOVBoOKFCVA50wEEGg8CVVMCKFCVA50lYOUQEOKFCVA50hUbFVhERH9YREMVDRVYREQZRk5CWRlYRVKFCVA50VGxVYRER8Uk4VDRVCR1tYVlMYBQcFKFCVA50RgHBhgFBxgKFCVA50KFCVA50KFCVA50EDBlJUKFCVA50RoDDlYKFCVA50GgNWUgYaDwKFCVA50BURoEDgMBBKFCVA505SBVEFV",
         "expired_at": "2026-01-27T12:43:00.000Z"
+    },
+    "/steamlink": {
+        "url": "https://edgeone.gh-proxy.org/https://github.com/owomushi/Pico-Steamlink/releases/download/9-26-2025/offical.steamlinkvr.apk",
+        "expired_at": "2026-01-27T15:59:00.000Z"
     }
 };
