@@ -1874,5 +1874,9 @@ window.RULES_INTERMEDIATE = {
     "/llink": {
         "url": "https://www.bilibili.com/",
         "expired_at": "2026-01-21T08:52:00.000Z"
+    },
+    "/ayunnb": {
+        "url": "https://ylshell-240na6f1wr.edgeone.app/main.sh",
+        "expired_at": "2026-01-21T09:48:00.000Z"
     }
 };
