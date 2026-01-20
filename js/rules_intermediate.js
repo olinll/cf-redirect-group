@@ -1866,5 +1866,9 @@ window.RULES_INTERMEDIATE = {
     "/aizhu": {
         "url": "https://hz3.dpdns.org/",
         "expired_at": "2026-01-26T13:25:00.000Z"
+    },
+    "/testing": {
+        "url": "https://null.red",
+        "expired_at": "2026-01-20T05:15:00.000Z"
     }
 };
