@@ -1882,5 +1882,9 @@ window.RULES_INTERMEDIATE = {
     "/djsnfnf": {
         "url": "https://cv.notaone.cn/login",
         "expired_at": "2026-01-27T21:30:00.000Z"
+    },
+    "/8888-001": {
+        "url": "https://www.baidu.com",
+        "expired_at": "2026-01-22T03:22:00.000Z"
     }
 };
