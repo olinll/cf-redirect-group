@@ -7998,5 +7998,9 @@ window.RULES_INTERMEDIATE = {
     "/quark_he": {
         "url": "https://pan.quark.cn/s/083a34e373a3",
         "expired_at": "2026-01-26T13:06:00.000Z"
+    },
+    "/test22": {
+        "url": "https://baidu.com",
+        "expired_at": "2026-01-22T15:32:00.000Z"
     }
 };
