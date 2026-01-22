@@ -7374,5 +7374,9 @@ window.RULES_INTERMEDIATE = {
     "/123abc": {
         "url": "https://www.bing.com",
         "expired_at": "2026-01-26T19:11:00.000Z"
+    },
+    "/asdasdasd": {
+        "url": "https://2x.nz1123121231.com.2x.nz@2x.n@z2x.nz/123abc",
+        "expired_at": "2026-01-23T08:18:00.000Z"
     }
 };
