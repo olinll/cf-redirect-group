@@ -7370,5 +7370,9 @@ window.RULES_INTERMEDIATE = {
     "/test22": {
         "url": "https://baidu.com",
         "expired_at": "2026-01-22T15:32:00.000Z"
+    },
+    "/123abc": {
+        "url": "https://www.bing.com",
+        "expired_at": "2026-01-26T19:11:00.000Z"
     }
 };
