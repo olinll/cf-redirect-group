@@ -7390,5 +7390,9 @@ window.RULES_INTERMEDIATE = {
     "/yes-gta61": {
         "url": "http://v.qq.com/x/cover/mzc00200yhu5imt.html",
         "expired_at": "2026-01-24T12:41:00.000Z"
+    },
+    "/ztrnb": {
+        "url": "https://al-right.top/",
+        "expired_at": "2026-01-30T15:04:00.000Z"
     }
 };
