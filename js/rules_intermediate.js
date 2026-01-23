@@ -7386,5 +7386,9 @@ window.RULES_INTERMEDIATE = {
     "/HGH6GH": {
         "url": "HTTPS://CAYNET.CN",
         "expired_at": "2026-01-30T10:31:00.000Z"
+    },
+    "/yes-gta61": {
+        "url": "http://v.qq.com/x/cover/mzc00200yhu5imt.html",
+        "expired_at": "2026-01-24T12:41:00.000Z"
     }
 };
