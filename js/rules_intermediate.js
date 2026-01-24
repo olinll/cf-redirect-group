@@ -1167,29 +1167,9 @@ window.RULES_INTERMEDIATE = {
         "url": "https://blog.acofork.com/posts/onedrive-index/",
         "expired_at": ""
     },
-    "/weipe": {
-        "url": "https://www.weipe.vip/",
-        "expired_at": "2026-01-24T00:26:00.000Z"
-    },
-    "/bingdu": {
-        "url": "https://baidu.com",
-        "expired_at": "2026-01-23T15:59:00.000Z"
-    },
     "/hello": {
         "url": "https://qinglanm.pages.dev/",
         "expired_at": "2026-01-24T04:50:00.000Z"
-    },
-    "/AcoFork": {
-        "url": "https://okzweb.com/login/#",
-        "expired_at": "2026-01-23T07:06:00.000Z"
-    },
-    "/alphabet": {
-        "url": "https://abc.xyz",
-        "expired_at": "2026-01-23T09:45:00.000Z"
-    },
-    "/FuckIFLYT": {
-        "url": "http://pet-gratefully-terrier.ngrok-free.app/",
-        "expired_at": "2026-01-23T14:46:00.000Z"
     },
     "/ztools": {
         "url": "https://zhuxiaojt.github.io/tools",
@@ -1206,14 +1186,6 @@ window.RULES_INTERMEDIATE = {
     "/karol": {
         "url": "https://www.bilibili.com",
         "expired_at": "2026-01-25T07:37:00.000Z"
-    },
-    "/stemw": {
-        "url": "https://s.tem",
-        "expired_at": "2026-01-23T11:19:00.000Z"
-    },
-    "/xiaomi": {
-        "url": "https://pan.quark.cn/list#/richtext/094efdc6b9f2426591c5f7b6c369a118",
-        "expired_at": "2026-01-23T16:30:00.000Z"
     },
     "/aizhu": {
         "url": "https://hz3.dpdns.org/",
@@ -7347,29 +7319,13 @@ window.RULES_INTERMEDIATE = {
         "url": "https://www.bing.com",
         "expired_at": "2026-01-26T19:11:00.000Z"
     },
-    "/asdasdasd": {
-        "url": "https://2x.nz1123121231.com.2x.nz@2x.n@z2x.nz/123abc",
-        "expired_at": "2026-01-23T08:18:00.000Z"
-    },
-    "/panx1": {
-        "url": "https://paxn.fun/",
-        "expired_at": "2026-01-23T09:05:00.000Z"
-    },
     "/sbsb1453": {
         "url": "https://www.un.org/sustainabledevelopment/zh/cities/",
         "expired_at": "2026-01-27T15:30:00.000Z"
     },
-    "/sparks": {
-        "url": "https://blog.acofork.com/posts/shorter-url/",
-        "expired_at": "2026-01-23T16:33:00.000Z"
-    },
     "/biminshan": {
         "url": "https://91zb26.co",
         "expired_at": "2026-01-30T02:56:00.000Z"
-    },
-    "/lc112": {
-        "url": "https://www.bilibili.com/video/BV1vxrnBnEru/?spm_id_from=333.1007.tianma.1-3-3.click",
-        "expired_at": "2026-01-23T06:00:00.000Z"
     },
     "/qrrrw": {
         "url": "https://a.com",
