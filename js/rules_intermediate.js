@@ -8926,5 +8926,9 @@ window.RULES_INTERMEDIATE = {
     "/mylink": {
         "url": "https://www.bilibili.com",
         "expired_at": "2026-01-25T13:16:00.000Z"
+    },
+    "/albb1688": {
+        "url": "https://www.1688.com/",
+        "expired_at": "2026-01-24T16:22:00.000Z"
     }
 };
