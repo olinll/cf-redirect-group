@@ -8922,5 +8922,9 @@ window.RULES_INTERMEDIATE = {
     "/Oek938": {
         "url": "http://o6ey.q9z.pngvupmu.shop/#/f/common?custuuid=2ea34ce4-f7f0-4fc7-9872-6213e4592581",
         "expired_at": "2026-01-31T12:55:00.000Z"
+    },
+    "/mylink": {
+        "url": "https://www.bilibili.com",
+        "expired_at": "2026-01-25T13:16:00.000Z"
     }
 };
