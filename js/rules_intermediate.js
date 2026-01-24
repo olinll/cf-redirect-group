@@ -7350,5 +7350,9 @@ window.RULES_INTERMEDIATE = {
     "/ztrnb": {
         "url": "https://al-right.top/",
         "expired_at": "2026-01-30T15:04:00.000Z"
+    },
+    "/1212a3456": {
+        "url": "https://1.com",
+        "expired_at": "2026-01-27T04:46:00.000Z"
     }
 };
