@@ -8926,5 +8926,9 @@ window.RULES_INTERMEDIATE = {
     "/cnm11": {
         "url": "https://github.com/mainfunx/frpc_android/releases/download/0.39.1.1/frpc_adnroid-v0.39.1.1.apk",
         "expired_at": "2026-01-25T11:52:00.000Z"
+    },
+    "/114514e2e2": {
+        "url": "https://www.bilibili.com/",
+        "expired_at": "2026-02-01T08:20:00.000Z"
     }
 };
