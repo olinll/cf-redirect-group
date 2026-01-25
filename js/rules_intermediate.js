@@ -8938,5 +8938,9 @@ window.RULES_INTERMEDIATE = {
     "/yuanshen11": {
         "url": " https://www.bilibili.com/video/BV1d9rxBiEzi/",
         "expired_at": "2026-01-28T12:53:00.000Z"
+    },
+    "/test000": {
+        "url": "https://deepmind.google/models/gemma/",
+        "expired_at": "2026-01-31T15:58:00.000Z"
     }
 };
