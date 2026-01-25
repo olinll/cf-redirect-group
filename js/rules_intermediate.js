@@ -8930,5 +8930,9 @@ window.RULES_INTERMEDIATE = {
     "/114514e2e2": {
         "url": "https://www.bilibili.com/",
         "expired_at": "2026-02-01T08:20:00.000Z"
+    },
+    "/test1": {
+        "url": "https://baidu.com",
+        "expired_at": "2026-01-30T11:00:00.000Z"
     }
 };
