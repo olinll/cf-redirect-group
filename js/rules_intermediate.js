@@ -8922,5 +8922,9 @@ window.RULES_INTERMEDIATE = {
     "/dddddd": {
         "url": "https://www.bilibili.com/video/BV1q2i1BLEJT/?spm_id_from=333.1007.tianma.26-1-99.click&vd_source=848b43ce7f2c93b11ebf7276dea7621c",
         "expired_at": "2026-01-27T09:50:00.000Z"
+    },
+    "/55555555": {
+        "url": "https://cn66website.pages.dev/",
+        "expired_at": "2026-01-30T14:58:00.000Z"
     }
 };
