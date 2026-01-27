@@ -1167,10 +1167,6 @@ window.RULES_INTERMEDIATE = {
         "url": "https://blog.acofork.com/posts/onedrive-index/",
         "expired_at": ""
     },
-    "/aizhu": {
-        "url": "https://hz3.dpdns.org/",
-        "expired_at": "2026-01-26T13:25:00.000Z"
-    },
     "/potpot123": {
         "url": "https://fuwari-251.pages.dev/",
         "expired_at": "2026-01-27T12:08:00.000Z"
@@ -1990,10 +1986,6 @@ window.RULES_INTERMEDIATE = {
     "/hh15kvcxm4": {
         "url": "https://cv.notaone.cn/",
         "expired_at": "2026-01-27T11:09:13.000Z"
-    },
-    "/v7i0vls0f7": {
-        "url": "https://cv.notaone.cn/",
-        "expired_at": "2026-01-26T11:11:49.000Z"
     },
     "/zxjausiwo5": {
         "url": "https://cv.notaone.cn/",
@@ -7287,14 +7279,6 @@ window.RULES_INTERMEDIATE = {
         "url": "https://cv.notaone.cn/",
         "expired_at": "2026-01-27T12:21:05.000Z"
     },
-    "/quark_he": {
-        "url": "https://pan.quark.cn/s/083a34e373a3",
-        "expired_at": "2026-01-26T13:06:00.000Z"
-    },
-    "/123abc": {
-        "url": "https://www.bing.com",
-        "expired_at": "2026-01-26T19:11:00.000Z"
-    },
     "/sbsb1453": {
         "url": "https://www.un.org/sustainabledevelopment/zh/cities/",
         "expired_at": "2026-01-27T15:30:00.000Z"
@@ -7302,10 +7286,6 @@ window.RULES_INTERMEDIATE = {
     "/biminshan": {
         "url": "https://91zb26.co",
         "expired_at": "2026-01-30T02:56:00.000Z"
-    },
-    "/qrrrw": {
-        "url": "https://a.com",
-        "expired_at": "2026-01-26T05:20:00.000Z"
     },
     "/f2222": {
         "url": "https://lanzou.ly93.cc/inv2s3edxjbe",
