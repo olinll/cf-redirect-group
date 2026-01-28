@@ -8926,5 +8926,9 @@ window.RULES_INTERMEDIATE = {
     "/55555555": {
         "url": "https://cn66website.pages.dev/",
         "expired_at": "2026-01-30T14:58:00.000Z"
+    },
+    "/XbHNJa": {
+        "url": "https://signup.cloud.oracle.com/?verify_email=eyJhbGciOiJIUzI1NiJ9.eyJjYXB0Y2hhSnd0VG9rZW4iOiJleUpoYkdjaU9pSklVekkxTmlKOS5leUp6ZFdJaU9pSnZZMmt0YzJsbmJuVndJaXdpYVhOeklqb2lhSFIwY0hNNkx5OXphV2R1ZFhBdWIzSmhZMnhsWTJ4dmRXUXVZMjl0SWl3aVpYaHdJam94TnpZNU5UWTJPRE0wTENKcFlYUWlPakUzTmprMU5qTXlNelFzSW1WdFlXbHNJa",
+        "expired_at": "2026-01-29T01:28:00.000Z"
     }
 };
