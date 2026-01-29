@@ -2510,5 +2510,9 @@ window.RULES_INTERMEDIATE = {
     "/yqyhome": {
         "url": "https://yqypuls.cn",
         "expired_at": "2026-01-30T10:20:00.000Z"
+    },
+    "/clash": {
+        "url": "https://pan.baidu.com/s/1VNTtfm54Sqgc5kO8WRfuUQ",
+        "expired_at": "2026-01-29T13:25:00.000Z"
     }
 };
