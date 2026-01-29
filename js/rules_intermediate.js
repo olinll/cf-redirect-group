@@ -2478,5 +2478,9 @@ window.RULES_INTERMEDIATE = {
     "/msopen22": {
         "url": "https://baidu.com//_javascript:alert(1)//",
         "expired_at": "2026-01-29T12:17:00.000Z"
+    },
+    "/msopen22g": {
+        "url": "https://baidu.com",
+        "expired_at": "2026-01-29T07:20:00.000Z"
     }
 };
