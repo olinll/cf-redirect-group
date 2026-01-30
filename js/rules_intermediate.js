@@ -2514,5 +2514,9 @@ window.RULES_INTERMEDIATE = {
     "/xiaoxiovo": {
         "url": "http://120.26.230.208:3000/#/chat",
         "expired_at": "2026-02-04T18:03:00.000Z"
+    },
+    "/uwu_uwu": {
+        "url": "https://httpbin.org/redirect-to?status_code=301&url=https://example.com",
+        "expired_at": "2026-01-31T16:00:00.000Z"
     }
 };
