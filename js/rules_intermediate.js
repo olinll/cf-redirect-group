@@ -2518,5 +2518,9 @@ window.RULES_INTERMEDIATE = {
     "/uwu_uwu": {
         "url": "https://httpbin.org/redirect-to?status_code=301&url=https://example.com",
         "expired_at": "2026-01-31T16:00:00.000Z"
+    },
+    "/uwu__uwu": {
+        "url": "https://httpbin.org/redirect-to?status_code=301&url=https://2x.nz/uwu__uwu",
+        "expired_at": "2026-02-04T21:05:00.000Z"
     }
 };
