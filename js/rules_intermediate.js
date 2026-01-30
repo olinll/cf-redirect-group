@@ -2506,5 +2506,9 @@ window.RULES_INTERMEDIATE = {
     "/917813": {
         "url": "http://91.com",
         "expired_at": "2026-01-31T14:36:00.000Z"
+    },
+    "/xiaoxi": {
+        "url": "https://dnq.br3.cn/o",
+        "expired_at": "2026-02-04T16:34:00.000Z"
     }
 };
