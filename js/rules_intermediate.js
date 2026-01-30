@@ -2534,5 +2534,9 @@ window.RULES_INTERMEDIATE = {
     "/___url": {
         "url": "https://2x.nz./_url",
         "expired_at": "2026-02-06T01:09:00.000Z"
+    },
+    "/kkaann": {
+        "url": "https://httpbin.org/redirect-to?status_code=301&url=https://kemono.cr/fanbox/user/44987750",
+        "expired_at": "2026-02-05T18:06:00.000Z"
     }
 };
