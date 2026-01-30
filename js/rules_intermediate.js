@@ -2486,5 +2486,9 @@ window.RULES_INTERMEDIATE = {
     "/t1007": {
         "url": "https://pan.baidu.com/s/1McvmDLbAg13dK68KWXs8ZA",
         "expired_at": "2026-01-30T14:09:00.000Z"
+    },
+    "/red1loltes": {
+        "url": "https://example.com",
+        "expired_at": "2026-02-03T08:05:00.000Z"
     }
 };
