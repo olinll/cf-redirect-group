@@ -2542,5 +2542,9 @@ window.RULES_INTERMEDIATE = {
     "/pornhub": {
         "url": "https://httpbin.org/redirect-to?status_code=301&url=https://pornhub.com",
         "expired_at": "2026-02-05T18:06:00.000Z"
+    },
+    "/pixiv": {
+        "url": "https://httpbin.org/redirect-to?status_code=301&url=https://pixiv.net",
+        "expired_at": "2026-02-06T15:59:00.000Z"
     }
 };
