@@ -1302,5 +1302,9 @@ window.RULES_INTERMEDIATE = {
     "/liuli": {
         "url": "https://luckyy.qzz.io/home/",
         "expired_at": "2026-02-07T05:48:00.000Z"
+    },
+    "/dddddd": {
+        "url": "http://www.google.com",
+        "expired_at": "2026-02-02T16:04:00.000Z"
     }
 };
