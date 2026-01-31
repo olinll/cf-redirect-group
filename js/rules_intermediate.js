@@ -1314,5 +1314,9 @@ window.RULES_INTERMEDIATE = {
     "/xiaod": {
         "url": "https://club.vip.qq.com/openKuikly/vas_qqvip_speed_act?open_kuikly_info=%7B%22bundle_name%22%3A%22vas_qqvip_speed_act%22%7D&qqmc_config=vas_kuikly_config&page_name=vas_qqvip_speed_act&kr_turbo_display=1&enteranceId=tupian&invite_code=e311f0f6-5425-4818-82e8-e021d10c5789&from=more_invite",
         "expired_at": "2026-02-06T14:43:00.000Z"
+    },
+    "/klklm": {
+        "url": "https://yb.tencent.com/fes/red/claim?signature=401748f2676148eb35d161968777d01215969d3b6066781b0b48069db6ad754c&red_packet_id=e3b6d2a8c6714cc89063e745186c64cc&yb_use_wechat_download_page=1",
+        "expired_at": "2026-02-03T20:24:00.000Z"
     }
 };
