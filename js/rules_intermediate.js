@@ -1167,25 +1167,9 @@ window.RULES_INTERMEDIATE = {
         "url": "https://blog.acofork.com/posts/onedrive-index/",
         "expired_at": ""
     },
-    "/Oek938": {
-        "url": "http://o6ey.q9z.pngvupmu.shop/#/f/common?custuuid=2ea34ce4-f7f0-4fc7-9872-6213e4592581",
-        "expired_at": "2026-01-31T12:55:00.000Z"
-    },
-    "/Acofok": {
-        "url": "https://q",
-        "expired_at": "2026-01-31T15:02:00.000Z"
-    },
     "/114514e2e2": {
         "url": "https://www.bilibili.com/",
         "expired_at": "2026-02-01T08:20:00.000Z"
-    },
-    "/test000": {
-        "url": "https://deepmind.google/models/gemma/",
-        "expired_at": "2026-01-31T15:58:00.000Z"
-    },
-    "/baibai": {
-        "url": "https://bing.com",
-        "expired_at": "2026-01-31T18:58:00.000Z"
     },
     "/klxss": {
         "url": "https://120524.xyz/",
@@ -1207,10 +1191,6 @@ window.RULES_INTERMEDIATE = {
         "url": "https://example.com",
         "expired_at": "2026-02-04T16:00:00.000Z"
     },
-    "/qwqawa": {
-        "url": "https://www.baidu.com/link?url=BbikJ1_oJzpCh8ZiC-3JvwdcEl1i9YN2U1QWuWtCfRq&wd=&eqid=ee77e8d300007d0f00000003697b0e4b",
-        "expired_at": "2026-01-31T07:29:00.000Z"
-    },
     "/woshishabi": {
         "url": "https://iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii.iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii.in/iIIIIiIIiiIiiiIiiIIIiIiIiIIIiiIiiIIiIIiiiiIiiiIiiiIIIiIiiiIiiiIiiIIiIiiiiIIIiIiiiIIIiIiiiIIIiiiiiIIIiiIIiiIIIiIiiiIiIIIIiiIiIIIIiiIIiiIiiIIIIiiiiiIiIIIiiIIiIIIiiIIIIiIiiiIiIIIIiIIIiIIIiIIiIIIIiIII",
         "expired_at": "2026-02-04T07:46:00.000Z"
@@ -1231,17 +1211,9 @@ window.RULES_INTERMEDIATE = {
         "url": "https://www.123865.com/s/eY85Td-HPwGd",
         "expired_at": "2026-02-06T02:10:00.000Z"
     },
-    "/zzczz": {
-        "url": "https://linux.do/t/topic/1543437",
-        "expired_at": "2026-01-31T10:48:00.000Z"
-    },
     "/cjdlt": {
         "url": "https://bcw11.cc?ref=6165",
         "expired_at": "2026-02-06T13:25:00.000Z"
-    },
-    "/917813": {
-        "url": "http://91.com",
-        "expired_at": "2026-01-31T14:36:00.000Z"
     },
     "/xiaoxi": {
         "url": "https://dnq.br3.cn/o",
@@ -1250,10 +1222,6 @@ window.RULES_INTERMEDIATE = {
     "/xiaoxiovo": {
         "url": "http://120.26.230.208:3000/#/chat",
         "expired_at": "2026-02-04T18:03:00.000Z"
-    },
-    "/uwu_uwu": {
-        "url": "https://httpbin.org/redirect-to?status_code=301&url=https://example.com",
-        "expired_at": "2026-01-31T16:00:00.000Z"
     },
     "/uwu__uwu": {
         "url": "https://httpbin.org/redirect-to?status_code=301&url=https://2x.nz/uwu__uwu",
