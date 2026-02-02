@@ -218,7 +218,7 @@ export default {
       const token = env.GITHUB_TOKEN;
 
       if (!token || !owner || !repo) {
-        return Response.json({ error: "服务器配置错误"+token+owner+repo }, { 
+        return Response.json({ error: "服务器配置错误" }, { 
             status: 500,
             headers: { "Access-Control-Allow-Origin": "*" }
         });
