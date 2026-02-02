@@ -2,6 +2,12 @@
   "compatibility_date": "2025-07-03",
   "name": "cf-redirect-group",
   "main": "worker.js",
+  "vars": {
+    "GITHUB_OWNER": "olinll",
+    "GITHUB_REPO": "cf-redirect-group",
+    "GITHUB_BRANCH": "main",
+    "GITHUB_TOKEN":""
+  },
     "observability": {
     "enabled": false,
     "head_sampling_rate": 1,
