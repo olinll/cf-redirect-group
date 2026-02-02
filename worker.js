@@ -14,7 +14,7 @@ export default {
 
     // 只允许 POST 请求
     if (request.method !== "POST") {
-      return new Response("Method not allowed", { status: 405 });
+      return new Response("方法不被允许", { status: 405 });
     }
 
     // CSRF 保护: 检查 Origin/Referer
@@ -38,7 +38,7 @@ export default {
             }
 
             if (!valid) {
-                 return Response.json({ error: "CSRF check failed: Invalid Origin/Referer" }, { 
+                 return Response.json({ error: "CSRF 检查失败：无效的 Origin/Referer" }, { 
                     status: 403,
                     headers: { "Access-Control-Allow-Origin": "*" }
                 });
@@ -54,7 +54,7 @@ export default {
         url = body.url;
         expired_at = body.expired_at;
       } catch (e) {
-        return Response.json({ error: "Invalid JSON body" }, { 
+        return Response.json({ error: "无效的 JSON 请求体" }, { 
             status: 400,
             headers: { "Access-Control-Allow-Origin": "*" }
         });
@@ -62,21 +62,21 @@ export default {
 
       // 1. 验证输入
       if (!pathname || typeof pathname !== "string" || pathname.length < 5 || pathname.length > 10) {
-        return Response.json({ error: "Invalid pathname (5-10 chars)" }, { 
+        return Response.json({ error: "无效的路径名（需 5-10 个字符）" }, { 
             status: 400,
             headers: { "Access-Control-Allow-Origin": "*" }
         });
       }
       // 简单正则验证 pathname 是否只包含允许字符
       if (!/^[a-zA-Z0-9_-]+$/.test(pathname)) {
-        return Response.json({ error: "Invalid characters in pathname" }, { 
+        return Response.json({ error: "路径名包含无效字符" }, { 
             status: 400,
             headers: { "Access-Control-Allow-Origin": "*" }
         });
       }
 
       if (!url || typeof url !== "string" || url.length > 300) {
-        return Response.json({ error: "Invalid URL (max 300 chars)" }, { 
+        return Response.json({ error: "无效的 URL（最多 300 个字符）" }, { 
             status: 400,
             headers: { "Access-Control-Allow-Origin": "*" }
         });
@@ -85,7 +85,7 @@ export default {
         const parsedUrl = new URL(url); // 验证 URL 格式
         // 安全检查: 必须是 http 或 https 协议
         if (parsedUrl.protocol !== "http:" && parsedUrl.protocol !== "https:") {
-            return Response.json({ error: "Invalid URL protocol (only http/https allowed)" }, { 
+            return Response.json({ error: "无效的 URL 协议（仅支持 http/https）" }, { 
                 status: 400,
                 headers: { "Access-Control-Allow-Origin": "*" }
             });
@@ -96,7 +96,7 @@ export default {
         // 但 URL 可能包含百分号编码，所以我们检查是否包含非 ASCII 字符
         // eslint-disable-next-line no-control-regex
         if (/[^\x00-\x7F]/.test(url)) {
-             return Response.json({ error: "URL contains non-ASCII characters (Emoji/Unicode not allowed)" }, { 
+             return Response.json({ error: "URL 包含非 ASCII 字符（不允许 Emoji/Unicode）" }, { 
                 status: 400,
                 headers: { "Access-Control-Allow-Origin": "*" }
             });
@@ -107,14 +107,14 @@ export default {
         if (baseDomain) {
             // 忽略大小写比较
             if (parsedUrl.hostname.toLowerCase() === baseDomain.toLowerCase()) {
-                return Response.json({ error: "Cannot redirect to the URL shortener itself (Loop protection)" }, { 
+                return Response.json({ error: "无法重定向到短链接服务自身（循环重定向保护）" }, { 
                     status: 400,
                     headers: { "Access-Control-Allow-Origin": "*" }
                 });
             }
         }
       } catch (e) {
-        return Response.json({ error: "Invalid URL format" }, { 
+        return Response.json({ error: "无效的 URL 格式" }, { 
             status: 400,
             headers: { "Access-Control-Allow-Origin": "*" }
         });
@@ -150,7 +150,7 @@ export default {
                            // Cloudflare Family DNS 拦截的域名通常解析到 0.0.0.0 或 ::
                            if (answer.data === "0.0.0.0" || answer.data === "::") {
                                const reason = dnsData.Comment ? dnsData.Comment.join(", ") : "Malware/Adult Content";
-                               return Response.json({ error: `URL blocked by Cloudflare Family DNS: ${reason}` }, { 
+                               return Response.json({ error: `URL 被 Cloudflare Family DNS 拦截: ${reason}` }, { 
                                    status: 400,
                                    headers: { "Access-Control-Allow-Origin": "*" }
                                });
@@ -167,14 +167,14 @@ export default {
            console.error("DNS Safety Check Error:", e);
            // 调试模式：如果 DNS 检查出错，返回错误信息而不是静默放行
            // 生产环境通常选择 fail-open (放行) 以保证可用性，但为了排查问题，这里改为 fail-closed
-           return Response.json({ error: "Security check failed: Unable to verify URL safety (" + e.message + ")" }, { 
+           return Response.json({ error: "安全检查失败：无法验证 URL 安全性 (" + e.message + ")" }, { 
                status: 500,
                headers: { "Access-Control-Allow-Origin": "*" }
            });
        }
 
       if (!expired_at || typeof expired_at !== "number") {
-        return Response.json({ error: "Invalid expiration timestamp" }, { 
+        return Response.json({ error: "无效的过期时间戳" }, { 
             status: 400,
             headers: { "Access-Control-Allow-Origin": "*" }
         });
@@ -185,24 +185,24 @@ export default {
       const expiredDate = new Date(expired_at * 1000);
       const now = new Date();
       if (isNaN(expiredDate.getTime())) {
-         return Response.json({ error: "Invalid timestamp" }, { 
+         return Response.json({ error: "无效的时间戳" }, { 
              status: 400,
              headers: { "Access-Control-Allow-Origin": "*" }
          });
       }
 
-      // 检查有效期是否超过 7 天
+      // 检查有效期是否超过 31 天
       const diffTime = expiredDate.getTime() - now.getTime();
       const diffDays = diffTime / (1000 * 3600 * 24);
-      if (diffDays > 7) {
-          return Response.json({ error: "Expiration date cannot exceed 7 days from now" }, { 
+      if (diffDays > 31) {
+          return Response.json({ error: "过期时间不能超过当前时间 31 天" }, { 
               status: 400,
               headers: { "Access-Control-Allow-Origin": "*" }
           });
       }
       // 检查有效期是否在过去
       if (diffTime <= 0) {
-          return Response.json({ error: "Expiration date must be in the future" }, { 
+          return Response.json({ error: "过期时间必须在未来" }, { 
               status: 400,
               headers: { "Access-Control-Allow-Origin": "*" }
           });
@@ -218,7 +218,7 @@ export default {
       const token = env.GITHUB_TOKEN;
 
       if (!token || !owner || !repo) {
-        return Response.json({ error: "Server configuration error" }, { 
+        return Response.json({ error: "服务器配置错误" }, { 
             status: 500,
             headers: { "Access-Control-Allow-Origin": "*" }
         });
@@ -237,7 +237,7 @@ export default {
       if (!getResp.ok) {
         const errText = await getResp.text();
         console.error("GitHub Fetch Error:", errText);
-        return Response.json({ error: "Failed to fetch file from GitHub: " + getResp.status }, { 
+        return Response.json({ error: "从 GitHub 获取文件失败: " + getResp.status }, { 
             status: 502,
             headers: { "Access-Control-Allow-Origin": "*" }
         });
@@ -260,7 +260,7 @@ export default {
       const jsonEnd = content.lastIndexOf('}');
       
       if (jsonStart === -1 || jsonEnd === -1) {
-        return Response.json({ error: "Failed to parse file content" }, { 
+        return Response.json({ error: "解析文件内容失败" }, { 
             status: 500,
             headers: { "Access-Control-Allow-Origin": "*" }
         });
@@ -274,7 +274,7 @@ export default {
         rules = JSON.parse(jsonStr);
       } catch (e) {
         // 如果 JSON.parse 失败，尝试更宽松的解析或报错
-        return Response.json({ error: "File content is not valid JSON" }, { 
+        return Response.json({ error: "文件内容不是有效的 JSON" }, { 
             status: 500,
             headers: { "Access-Control-Allow-Origin": "*" }
         });
@@ -283,7 +283,7 @@ export default {
       // 检查是否已存在
       const pathKey = "/" + pathname;
       if (rules[pathKey]) {
-        return Response.json({ error: "Pathname already exists" }, { 
+        return Response.json({ error: "路径名已存在" }, { 
             status: 409,
             headers: { "Access-Control-Allow-Origin": "*" }
         });
@@ -331,7 +331,7 @@ export default {
       if (!putResp.ok) {
         const errText = await putResp.text();
         console.error("GitHub API Error:", errText);
-        return Response.json({ error: "Failed to commit to GitHub" }, { 
+        return Response.json({ error: "提交到 GitHub 失败" }, { 
             status: 502,
             headers: { "Access-Control-Allow-Origin": "*" }
         });
@@ -354,7 +354,7 @@ export default {
 
       return Response.json({ 
         success: true, 
-        message: "Short link created",
+        message: "短链接创建成功",
         short_url: shortUrl,
         commit_url: commitUrl
       }, {
@@ -363,7 +363,7 @@ export default {
 
     } catch (err) {
       console.error(err);
-      return Response.json({ error: "Internal Server Error: " + err.message }, { 
+      return Response.json({ error: "内部服务器错误: " + err.message }, { 
           status: 500,
           headers: { "Access-Control-Allow-Origin": "*" }
       });
