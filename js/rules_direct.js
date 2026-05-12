@@ -11,4 +11,8 @@ window.RULES_DIRECT = {
         "url": "https://i2.olinl.com",
         "expired_at": ""
     },
+    "/w": {
+        "url": "https://pan.olinl.com/d/local/HEU_KMS_Activator_v63.3.4.iso?sign=mHtsHCiBQiuvmJRAaiGG_0goHo7TyuwTOLawLDTHYis=:0",
+        "expired_at": ""
+    },
 };
