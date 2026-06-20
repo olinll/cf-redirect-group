@@ -1,5 +1,5 @@
 window.RULES_DIRECT = {
-    "/bf": {
+    "/f": {
         "url": "https://blog.olinl.com/friends/",
         "expired_at": ""
     },
