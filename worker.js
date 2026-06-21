@@ -217,8 +217,9 @@ export default {
       const filePath = "js/rules_intermediate.js";
       const token = env.GITHUB_TOKEN;
 
+      console.log("ENV CHECK:", { owner, repo, hasToken: !!token, branch });
       if (!token || !owner || !repo) {
-        return Response.json({ error: "服务器配置错误" }, { 
+        return Response.json({ error: "服务器配置错误", debug: { hasOwner: !!owner, hasRepo: !!repo, hasToken: !!token } }, {
             status: 500,
             headers: { "Access-Control-Allow-Origin": "*" }
         });
