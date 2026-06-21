@@ -362,8 +362,8 @@ export default {
       });
 
     } catch (err) {
-      console.error(err);
-      return Response.json({ error: "内部服务器错误: " + err.message }, { 
+      console.error("详细错误:", err.stack || err.message || err);
+      return Response.json({ error: "内部服务器错误: " + (err.message || "未知错误") }, {
           status: 500,
           headers: { "Access-Control-Allow-Origin": "*" }
       });
