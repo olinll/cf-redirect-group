@@ -5,7 +5,7 @@ window.RULES_DIRECT = {
     },
     
     "/music": {
-        "url": "https://tools.olinl.com/music",
+        "url": "https://tools.olinl.com/music/",
         "expired_at": ""
     }
 };
